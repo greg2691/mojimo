@@ -8,7 +8,7 @@ pageRef = '/'
 weight = 10
 
 [[menus.main]]
-name = 'Posts'
+name = 'Tutti i post'
 pageRef = '/posts'
 weight = 20
 
@@ -18,9 +18,19 @@ weight = 20
 # weight = 30
 
 [[menus.main]]
-name = 'Categorie'
-pageRef = '/categories'
+name = 'Network'
+pageRef = '/categories/network'
 weight = 30
+
+[[menus.main]]
+name = 'Linux'
+pageRef = '/categories/linux'
+weight = 40
+
+[[menus.main]]
+name = 'Windows'
+pageRef = '/categories/windows'
+weight = 50
 
 [module]
   [module.hugoVersion]
