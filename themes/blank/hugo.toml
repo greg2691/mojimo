@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Moji-Moji - Failing journey of an aspiring pentester'
 
 [[menus.main]]
 name = 'Home'
@@ -12,9 +12,14 @@ name = 'Posts'
 pageRef = '/posts'
 weight = 20
 
+# [[menus.main]]
+# name = 'Tags'
+# pageRef = '/tags'
+# weight = 30
+
 [[menus.main]]
-name = 'Tags'
-pageRef = '/tags'
+name = 'Categorie'
+pageRef = '/categories'
 weight = 30
 
 [module]

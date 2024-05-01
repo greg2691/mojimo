@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introduzione Alle Reti | Moji-Moji - Failing journey of an aspiring pentester</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+
+</head>
+<body>
+  <header>
+	<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+		<img src=/pic/moji-logo-2.png>
+    </a>
+
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+    
+      <a class="navbar-item" href="/">
+        
+		Home
+      </a>
+	
+      <a class="navbar-item" href="/posts/">
+        
+		Posts
+      </a>
+	
+      <a class="navbar-item" href="/categories/">
+        
+		Categorie
+      </a>
+	
+    </div>
+
+  </div>
+</nav>
+
+  </header>
+  <section class="section">
+    <div class="container">
+      
+  <h1 class="title">Introduzione Alle Reti</h1>
+
+  
+  
+  <em><b>Published: </b><time datetime="2024-05-01T21:23:19&#43;02:00">May 1, 2024</time> / 
+    <b>Categories:</b>
+        <a href="/categories/network/">Network</a>
+</em> 
+  <br><br>
+  
+
+
+	<div class="content">
+	
+	<p>Oh bro!! La rete è un sistema (semplice?) reso dannatamente complesso che consente a due dispositivi di comunicare fra loro.
+Questo è semplice, un computer comunica con un altro computer (in questo caso chiamato server) attraverso una rete. In realtà quel computer potrebbe essere addirittura attaccato con un cavo all&rsquo;altro computer (il server) e comunicare in questo modo MA! C&rsquo;è un enorme ma ed è qui che subentra il concetto di rete bello complesso che &ldquo;conosciamo&rdquo;&hellip;</p>
+<p>Supponiamo quindi, utilizzando una metafora che possa spiegare la logica, che io voglia inviare un pacco pieno di cacca ad una persona che mi sta antipatica. Di questa persona però conosco solo il nome. Andrò al mio ufficio postale locale e affiderò loro il mio pacco dicendo di spedirlo a Bob Smith. L&rsquo;ufficio postale prenderà il pacco e con questo il mio nome e indirizzo e lo invierà all&rsquo;hub postale principale, questo hub si preoccuperà di cercare l&rsquo;indirizzo di Bob Smith nella sua enorme agenta e invierà il pacchetto a Bob Smith.</p>
+<p>Bob Smith felice di aver ricevuto la cacca che tanto aspettava da me decide di inviarmi una letterina di ringraziamento, così&hellip; per rinoscenza!!</p>
+<p>Porterà la letterina al suo ufficio postale locale (il mio nome e il mio indirizzo sono informazioni ricevuto con il pacco), il suo ufficio postale invierà la letterina all&rsquo;hub principale che a sua volta lo invierà al mio ufficio postale locale che a sua volta ancora mi porterà la letterina a casa.</p>
+<p>Quello che è appena avvenuto è uno scambio fra due persone. Supponiamo però che queste due persone siano computer, o iPhone o la merda che più preferite.</p>
+<p>Supponiamo che io devo collegarmi su amazon.it per fare shopping:</p>
+<p>Il mio computer (identificato da un indirizzo IP) una volta premuto invio nel browser dopo aver digitato amazon.it invierà un pacchetto (sì sono pacchetti anche questi) contenente la mia richiesta al mio router (che sarebbe l&rsquo;ufficio postale locale) il router (tramite complesse traduzioni dell&rsquo;indirizzo IP locale a non-locale) invierà il pacchetto all&rsquo;ISP (l&rsquo;hub postale principale).</p>
+<p>L&rsquo;ISP controllerà il DNS (il grande librone degli indirizzi) dove è contenuto l&rsquo;indirizzo IP di amazon.it, una volta trovato invierà il pacchetto al suo server (quello di amazon.it).</p>
+<p>Una volta ricevuta la richiesta dal server amazon.it lui mi rimanderà la sua home page (o qualsiasi pagina specifica richiesta) al mio indirizzo IP, quello contenuto nel pacchetto che ho inviato io insieme alla richiesta,  comunicando con il suo router e a sua volta con l&rsquo;ISP, ripassando per il mio router e arrivando fresco fresco al mio browser.</p>
+<p>Essenzialmente è così che funziona una rete.</p>
+<p>Ovviamente i processi sono resi veramente MOOOLTO semplici in questo esempio, non è stato specificato come queste comunicazioni sono possibili, non sono specificati gli strumenti e i protocolli con cui avvengono.</p>
+<p>Ci sono tanti sotto-aspetti tecnici che non abbiamo nominato e abbiamo semplicemente visto quella che è la logica dietro la comunicazione di rete. Che poi, dopo tutto, questo è&hellip; andare da un punto A ad un punto B e vice versa.</p>
+<p>See you next time bro!!</p>
+
+	
+	<div id="graphcomment"></div>
+<script type="text/javascript">
+
+   
+
+  var __semio__params = {
+    graphcommentId: "Moji-Moji", 
+
+    behaviour: {
+      
+      
+    },
+
+    
+
+  }
+
+   
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
+
+</script>
+	
+	</div>
+  
+
+
+    </div>
+    <footer>
+    	<p>Copyright 2024. All rights reserved.</p>
+
+  	</footer>
+  </section>
+  </body>
+</html>
