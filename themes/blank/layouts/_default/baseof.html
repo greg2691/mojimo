@@ -9,7 +9,12 @@
   </header>
   <section class="section">
     <div class="container">
-      {{ block "main" . }}{{ end }}
+
+		<div class="columns">
+  			<div class="column is-three-quarters">{{ block "main" . }}{{ end }}</div>
+  			<div class="column">{{ partial "sidebar.html" . }}</div>
+		</div>
+
     </div>
   </section>
   <div class="section">
@@ -19,3 +24,5 @@
 </div>
   </body>
 </html>
+
+

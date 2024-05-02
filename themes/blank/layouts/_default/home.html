@@ -1,7 +1,9 @@
 {{ define "main" }}
   {{ .Content }}
+  <div class="content">
   {{ range site.RegularPages }}
     <h3 class="title is-3"><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h3>
     {{ .Summary }}
   {{ end }}
+  </div>
 {{ end }}

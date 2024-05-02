@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tipi di rete | Moji-Moji - Failing journey of an aspiring pentester</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+<link rel="stylesheet" href="/main.css">
+</head>
+<body>
+  <header>
+	<nav class="navbar is-success" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+		<img src=/pic/moji-logo-2.png>
+    </a>
+
+    <a role="button" id="nav-toggle" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+    
+      <a class="navbar-item" href="/">
+        
+		Home
+      </a>
+	
+      <a class="navbar-item" href="/posts/">
+        
+		Tutti i post
+      </a>
+	
+      <a class="navbar-item" href="/categories/network/">
+        
+		Network
+      </a>
+	
+      <a class="navbar-item" href="">
+        
+		Linux
+      </a>
+	
+      <a class="navbar-item" href="">
+        
+		Windows
+      </a>
+	
+    </div>
+
+  </div>
+</nav>
+
+  </header>
+  <section class="section">
+    <div class="container">
+
+		<div class="columns">
+  			<div class="column is-three-quarters">
+  <h1 class="title">Tipi di rete</h1>
+
+  
+  
+  <em><b>Published: </b><time datetime="2024-05-02T17:23:19&#43;02:00">May 2, 2024</time> / 
+    <b>Categories:</b>
+        <a href="/categories/network/">Network</a>
+</em> 
+  <br><br>
+  
+
+
+	<div class="content">
+	
+	<p>Ciao bro!! Per complicarci ulteriormente l&rsquo;esistenza queste reti possono essere coinfigurate in vari modi. Per questo motivo abbiamo diverse topologie e diversi tipi di rete.</p>
+<p>Fra i tipi di rete ci sono due, diciamo così, macro categorie:</p>
+<ol>
+<li>Terminologie comuni</li>
+<li>Terminologie di riferimento</li>
+</ol>
+<h3 id="fra-le-terminologie-comuni-abbiamo">Fra le terminologie comuni abbiamo:</h3>
+<ol>
+<li>
+<p><strong>La WAN: Wide Area Network</strong>, conosciuta come &ldquo;L&rsquo;INTERNET&rdquo;. Non è nient&rsquo;altro che un insieme di reti LAN collegate fra loro. Spesso possiamo vedere delle grandi aziende avere un sistema di Intranet, che sarebbe un &ldquo;INTERNET&rdquo; interno accessibile solo dai computer e dalla rete aziendali.</p>
+</li>
+<li>
+<p><strong>La LAN: Local Area Network</strong>, praticamente la rete di casa tua o del tuo ufficio.</p>
+</li>
+<li>
+<p><strong>La WLAN,</strong> essenzialmente come sopra ma attraverso la wireless</p>
+</li>
+<li>
+<p><strong>la VPN: Virtual Private Network</strong>, esattamente quella che branchi di youtuber sponsirizzano, sono, in parole povere, diverse reti collegate ad una LAN. Ma anche qui la faccenda è un attimino più complessa di quello che sembra, perché ne esistono bene tre diversi tipi! Sì o mio dio! TRE, DIVERSI, TIPI:</p>
+</li>
+<li>
+<p><strong>Site-To-Site VPN:</strong> in questo caso sia il client che il server sono dei dispositivi di rete, come ad esempio un router e un firewall. Viene utilizzate per unire diverse reti aziendali attraverso Internet, questo consente ai dispositivi sparsi in diversi luoghi di comunicare via Internet come se stessero tutti nello stesso luogo&hellip;</p>
+</li>
+<li>
+<p><strong>Remote Access VPN:</strong> poniamo caso la vostra azienda ha una sua intranet localizzata su un server aziendale, installato proprio li, nell&rsquo;ufficio accanto al tuo. Poniamo caso sempre che in questa intranet c&rsquo;è tutto il meglio del porno reperibile in rete (quell&rsquo;altra retew ;) ), facciamo che tu sei a casa che lavori da remoto e nella tua pausa pranzo vorresti usufruire di quel bellissimo materiale&hellip; ma è nell&rsquo;intranet&hellip; come puoi fare?!?!?!! Installando un software, ad esempio OpenVPN che ti consente di connetterti alla rete interna aziendale e comportarti come se ti trovassi fisicamente li. Ovviamente anche qui abbiamo delle particolarità che devono necessariamente rovinarci la vita, come ad esempio la split-tunnel VPN: in pratica quando ci connettiamo con il Remote Access VPN, non è altro che una connessione Tunnel Criptata fra noi, che siamo il client e loro che sono il server&hellip; in una split-tunnell VPN abbiamo una connessione tunnel criptata magari specifica per una certa rete (ad esempio che so&hellip; 10.10.10.10/24) in questo modo la connessione a questa specifica rete è criptata ma alle altre reti siamo in braccio a Dio, questo significa che tutto il resto non è criptato.</p>
+</li>
+<li>
+<p><strong>SSL VPN:</strong> è essenzialmente una VPN realizzata all&rsquo;interno del nostro browser, generalmente questi &ldquo;programmi&rdquo; trasmettono applicazioni o intere sessioni desktop al browser.</p>
+</li>
+</ol>
+<h3 id="fra-le-stronzissime-terminologie-di-riferimento-abbiamo-rullo-di-tamburi">Fra le stronzissime terminologie di riferimento, abbiamo&hellip; rullo di tamburi&hellip;.</h3>
+<ol>
+<li>
+<p><strong>La GAN: Global Area Network</strong>, una struttura megalattica mondiale come Internet ad esempio è una GAN. MA NON SOLOOO!! Anche diverse compagne internazionali utilizzano reti isolate che si estondono attraverso l&rsquo;utilizzo di più WAN collegando così computer in tutto il mondo. Utilizzano strutture in fibra di vetro ad altro raggio e le interconnettono fra di loro attraverso cavi internazionali sotto marini o trasmissioni satellitari. (ROBA DA SPIONAGGIO INTERGALATTICO)</p>
+</li>
+<li>
+<p><strong>La MAN:</strong> Metropolitan Area Network, se la GAN collega diverse MAN la MAN collega diverse LAN in prossimità geografica. Vi prego non odiatemi&hellip;. Questo avviene tramite vengono utilizzati router e reti a fibra di vetro ad alte prestazioni, questo consente una velocità di scambio di informazioni notvalmente superiore a quella di Internet (che poi non si sa perché ma dovrebbe essere internet anche questa), la velocità di trasmissione può essere paragonata a quella di una LAN. Le città collegate come MAN possono essere integrate in realtà sopra-regionali nelle WAN e internazionalmente come GAN.</p>
+</li>
+<li>
+<p><strong>La PAN o WPAN:</strong> Personal Area Network, essenzialmente i dispositivi moderni come smartphone, tablet e computer possono essere collegati tra di loro creando così una rete ad hoc che consente lo scambio di dati. Può avvenire via cavo PAN o via wireless WPAN. In questo caso però ovviamente la fregatura sta nel fatto che una PAN creata via wireless è chiamata Piconet. Si estendono, poverine, per poche metri e non sono adatte a collegare dispositivi in diverse stanze separate o diversi uffici&hellip; che poi anche qui perché? Se è possibile connetterle via Wireless.</p>
+</li>
+</ol>
+<p>See you next time bro!!!</p>
+
+	
+		</div>
+	
+
+	
+	<div id="graphcomment"></div>
+<script type="text/javascript">
+
+   
+
+  var __semio__params = {
+    graphcommentId: "Moji-Moji", 
+
+    behaviour: {
+      
+      
+    },
+
+    
+
+  }
+
+   
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
+
+</script>
+	
+
+</div>
+  			<div class="column"><h6 class="title is-6">Ultimi post</h6>
+<ul>
+	
+		
+	
+		
+	
+</ul>
+
+
+
+</div>
+		</div>
+
+    </div>
+  </section>
+  <div class="section">
+<footer>
+  <footer class="footer">
+  <div class="content has-text-centered">
+      
+
+	<script src="/bulma.js"></script> 
+	<p>Don't think a Copyright is necessary here. Just give credits where the credits due, bro!!</p>
+  
+	<img src="https://www.vim.org/images/vim_powered_greenblack.gif">
+
+  </div>
+</footer>
+
+</footer>
+</div>
+  </body>
+</html>
+
+
