@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Network on Moji-Moji - Failing journey of an aspiring pentester</title>
-    <link>http://localhost:1313/categories/network/</link>
+    <link>https://example.org/categories/network/</link>
     <description>Recent content in Network on Moji-Moji - Failing journey of an aspiring pentester</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 May 2024 17:23:19 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/network/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://example.org/categories/network/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Introduzione Alle Reti</title>
-      <link>http://localhost:1313/posts/tipologie-di-rete/</link>
+      <title>Tipi di rete</title>
+      <link>https://example.org/posts/tipologie-di-rete/</link>
       <pubDate>Thu, 02 May 2024 17:23:19 +0200</pubDate>
-      <guid>http://localhost:1313/posts/tipologie-di-rete/</guid>
-      <description>Per complicarci ulteriormente l&amp;rsquo;esistenza queste reti possono essere coinfigurate in vari modi. Per questo motivo abbiamo diverse topologie e diversi tipi di rete.&#xA;Fra i tipi di rete ci sono due, diciamo così, macro categorie:&#xA;1- Terminologie comuni 2 - Terinologie di riferimento&#xA;Fra le terminologie comuni abbiamo:&#xA;La WAN: Wide Area Network, conosciuta come &amp;ldquo;L&amp;rsquo;INTERNET&amp;rdquo;. Non è nient&amp;rsquo;altro che un insieme di reti LAN collegate fra loro. Spesso possiamo vedere delle grandi aziende avere un sistema di Intranet, che sarebbe un &amp;ldquo;INTERNET&amp;rdquo; interno accessibile solo dai computer e dalla rete aziendali.</description>
+      <guid>https://example.org/posts/tipologie-di-rete/</guid>
+      <description>Ciao bro!! Per complicarci ulteriormente l&amp;rsquo;esistenza queste reti possono essere coinfigurate in vari modi. Per questo motivo abbiamo diverse topologie e diversi tipi di rete.&#xA;Fra i tipi di rete ci sono due, diciamo così, macro categorie:&#xA;Terminologie comuni Terminologie di riferimento Fra le terminologie comuni abbiamo: La WAN: Wide Area Network, conosciuta come &amp;ldquo;L&amp;rsquo;INTERNET&amp;rdquo;. Non è nient&amp;rsquo;altro che un insieme di reti LAN collegate fra loro. Spesso possiamo vedere delle grandi aziende avere un sistema di Intranet, che sarebbe un &amp;ldquo;INTERNET&amp;rdquo; interno accessibile solo dai computer e dalla rete aziendali.</description>
     </item>
     <item>
       <title>Introduzione Alle Reti</title>
-      <link>http://localhost:1313/posts/introduzione-alle-reti/</link>
+      <link>https://example.org/posts/introduzione-alle-reti/</link>
       <pubDate>Wed, 01 May 2024 21:23:19 +0200</pubDate>
-      <guid>http://localhost:1313/posts/introduzione-alle-reti/</guid>
+      <guid>https://example.org/posts/introduzione-alle-reti/</guid>
       <description>Oh bro!! La rete è un sistema (semplice?) reso dannatamente complesso che consente a due dispositivi di comunicare fra loro. Questo è semplice, un computer comunica con un altro computer (in questo caso chiamato server) attraverso una rete. In realtà quel computer potrebbe essere addirittura attaccato con un cavo all&amp;rsquo;altro computer (il server) e comunicare in questo modo MA! C&amp;rsquo;è un enorme ma ed è qui che subentra il concetto di rete bello complesso che &amp;ldquo;conosciamo&amp;rdquo;&amp;hellip;</description>
     </item>
   </channel>
