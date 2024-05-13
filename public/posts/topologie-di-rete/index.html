@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top"  lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Topologie Di Rete | Moji-Moji - Failing journey of an aspiring pentester</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+<link rel="stylesheet" href="/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+	<nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+		<img src=/pic/moji-logo-2.png>
+    </a>
+
+    <a role="button" id="nav-toggle" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+    
+      <a class="navbar-item" href="/">
+        
+		Home
+      </a>
+	
+      <a class="navbar-item" href="/posts/">
+        
+		Tutti i post
+      </a>
+	
+      <a class="navbar-item" href="/categories/network/">
+        
+		Network
+      </a>
+	
+      <a class="navbar-item" href="">
+        
+		Linux
+      </a>
+	
+      <a class="navbar-item" href="">
+        
+		Windows
+      </a>
+	
+    </div>
+
+    <div class="navbar-end">
+    	<div class="navbar-item">
+    		<div class="buttons">
+			<a class="button is-black" href="https://referral.hackthebox.com/mz8ndln">
+				<strong>Hack The Box</strong>		
+			</a>
+		</div>
+	</div>
+     </div>
+
+  </div>
+</nav>
+
+  </header>
+  <section class="section">
+    <div class="container">
+
+
+  <h1 class="title">Topologie Di Rete</h1>
+
+  
+  
+  <em><b>Published: </b><time datetime="2024-05-13T20:36:31&#43;02:00">May 13, 2024</time> / 
+    <b>Categories:</b>
+        <a href="/categories/network/">Network</a>
+</em> 
+  <br><br>
+  
+
+
+	<div class="content">
+	
+	<p>Identifica o determina tutte le componentistiche che rendono queste connessioni possibili, così come i metodi di accesso ai mezzi di trasmissione.</p>
+<p>Con topologia ci riferisce alla disposizione tipica e alla connessione fisica o logica dei dispositivi in una rete.</p>
+<p>La connessione fisica riguarda esattamente i materiali fisici, come le componenti utilizzate per le connessioni. Parliamo quindi di cavi, router, swtiches, bridges, hub ecc. ecc. Anche la posizione dei nodi riguarda la connessione fisica. Per connessione logica invece ci riferiamo al modo in cui queste connessioni sono possibili, a come il segnale si muove attraverso la rete.</p>
+<p><strong>Possiamo racchiudere la topologia di rete in tre macro categorie:</strong></p>
+<h2 id="1---connessioni">1 - Connessioni:</h2>
+<ol>
+<li>Possono essere via cavo, come cavi coassiali, fibra ecc. ecc.</li>
+<li>Possono essere wireless, come la rete cellulare, il satellite o appunto il wi-fi</li>
+</ol>
+<h2 id="2---nodi-network-interface-controller">2 - Nodi (network interface controller):</h2>
+<p>Sono i punti di connessione fra il mittende e il destinatario del segnale</p>
+<h2 id="3---classificazioni">3 - Classificazioni:</h2>
+<p>Pensiamo alla topologia come ad una rappresentazione virtuale della rete. Non necessariamente questa disposizione rappresenta la realtà, per questo parliamo di connessioni fisica o logica. Prendiamo ad esempio la disposizione fisica dei computer all&rsquo;interno di una stanza: possiamo disporli in cerchio ma questo non necessariamente significa che la topologia utilizzata è la ring topology (topologia ad anello).</p>
+<h3 id="fra-le-classificazioni-abbiamo">Fra le classificazioni abbiamo:</h3>
+<p><strong>1. Point-to-point:</strong>
+La point-to-point è la classificazione più semplice, l&rsquo;host-a comunica con l&rsquo;host-b con un cavo diretto fra i due. Si parla di una connessione dedicata fra questi due dispositivi e si parla letteralmente di un cavo diretto fra i due. Immagino ad esempio un cavo ethernet che collega due computer.</p>
+<p><strong>2. Bus:</strong>
+Nella connessione bus tutti gli hosts sono connessi fra di loro con un solo mezzo di trasmissione (transmission medium) che può essere ad esempio un cavo coassiale. Non esiste un componente di rete centrale che controlla il processo. Essendo il mezzo di trasmissione condiviso con tutti gli altri host solamente uno di loro può inviare il segnale, tutti gli altri potranno solo riceverlo.</p>
+<p><strong>3. Star:</strong>
+Nella topologia star abbiamo un componente di rete centrale che può essere un router o uno switch che gestisce il traffico dei pacchetti di rete. Tutti gli hosts sono collegati a lui tramite connessioni singoli, uniche, private, separate, monogami ;) . Data la natura centrale del componente di rete il traffico su di lui può essere molto elevato.</p>
+<p><strong>4. Ring:</strong>
+Nella topologia ad anello (ring) possiamo parlare dei due tipi di connessione, fisica e logica.
+Nella topologia fisica ogni host è collegato all&rsquo;anello attraverso due cavi: uno per il segnale in entrata ed uno per il segnale in uscita. In questa topologia non abbiamo bisogno di componenti di rete attivi, come possono essere: switch, bridge, hub. Queste componenti rafforzano il segnale di rete facendo in modo che nel loro tragitto non perdano qualità o potenza. L&rsquo;accesso ed il controllo al mezzo di comunicazione sono regolate in questo caso da un protocollo a cui tutti gli host aderiscono.
+Nella topologia logica invece quella che viene applicazione fisicamente è la topologia a stella. Dove un componente di rete centrale simula l&rsquo;anello inoltrando il segnale da una porta all&rsquo;altra.</p>
+<p>Nella topologia ad anello il segnale è spesso distribuito in una direzione predeterminata, che può essere a senso orario o anti-orario. Solitamente il segnale passa attraverso il media di comunicazione passando da host in host (stazione a stazione) utilizzando un sistema di recupero dalla stazione centrale o un token. Un token è un modello di bit che passa continuamente nell&rsquo;anello seguendo una direzione che funziona secondo il processo di rivendicazione del token.</p>
+<p><strong>5. Mesh:</strong>
+Nella topologia mesh ci sono svariati nodi che decidono riguardo le connessioni sul livello fisico e il routing sul livello logico. Possiamo però dividerla in due sotto categorie:</p>
+<ol>
+<li>Fully meshed: In questa topologia ogni singolo host è collegato ad un altro. Questa è una configurazione tipica delle reti WAN e MAN poichè conferisce una maggiore stabilità e ampiezza di banda. In questa topologia anche mezzi di rete importanti come i router sono collegati fra di loro, con il vantaggio che se uno di questi router si guasta è possibile utilizzare gli altri, poiché ogni nodo in questa configurazione ha gli stessi settaggi di routing e la stessa conoscenza dei nodi vicini.</li>
+<li>Partially Meshed: in questo caso gli endpoint o host sono collegati attraverso una sola connessione.</li>
+</ol>
+<p><strong>6. Tree</strong>:
+La topologia tree è una variante estesa della topologia star ed è solitamente utilizzata da reti estese e se vogliamo dirlo più &ldquo;complesse&rdquo;. È solitamente utile quando vogliamo applicare più topologie diverse ed è spesso usata in aziende molto grandi. Ne esistono sia fisiche che logiche. Sono spesso usate anche per tipi di rete a banda larga e reti cittadine MAN.</p>
+<p><strong>7. Hybrid (topologia ibrida che utilizza 2 o più classificazioni di cui sopra)</strong>:
+In questa topologia si utilizzano diverse topologie di rete, ad esempio quando connettiamo una topologia tree ad una star. Dobbiamo però avere le due topologie base diverse, nel caso in cui connettiamo due topologie tree o due star si avranno comunque o una topologia star o una tree.</p>
+<p><strong>8. Daisy chain</strong>:
+In questa topologia gli host sono collegati in serie fra di loro attraverso una connessione fisica dei nodi. In questo caso il segnale è inviato attraverso il nodo precedende. È l&rsquo;unica topologia fisica che rispecchia la topologia logica.</p>
+<p>Per il momento questo è quanto sulle topologie di rete.</p>
+
+	
+		</div>
+	
+
+	
+	<div id="graphcomment"></div>
+<script type="text/javascript">
+
+   
+
+  var __semio__params = {
+    graphcommentId: "Moji-Moji", 
+
+    behaviour: {
+      
+      
+    },
+
+    
+
+  }
+
+   
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
+
+</script>
+	
+
+
+  				
+    </div>
+  </section>
+  <div class="section">
+<footer>
+  <footer class="footer">
+  <div class="content has-text-centered">
+      
+
+	<script src="/bulma.js"></script> 
+	<p>Don't think a Copyright is necessary here. Just give credits where the credits due, bro!!</p>
+  
+	<img src="https://www.vim.org/images/vim_powered_greenblack.gif">
+
+  </div>
+</footer>
+
+</footer>
+</div>
+  </body>
+</html>
+
+

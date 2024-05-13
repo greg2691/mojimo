@@ -2,17 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://example.org/tags/bus/</loc>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
+  </url><url>
     <loc>https://example.org/categories/</loc>
-    <lastmod>2024-05-02T17:23:19+02:00</lastmod>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/hybrid/</loc>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/mesh/</loc>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/network/</loc>
-    <lastmod>2024-05-02T17:23:19+02:00</lastmod>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
   </url><url>
     <loc>https://example.org/categories/network/</loc>
-    <lastmod>2024-05-02T17:23:19+02:00</lastmod>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/point-to-point/</loc>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/ring/</loc>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/star/</loc>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/</loc>
-    <lastmod>2024-05-02T17:23:19+02:00</lastmod>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/tags/topologie/</loc>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/posts/topologie-di-rete/</loc>
+    <lastmod>2024-05-13T20:36:31+02:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/tipi/</loc>
     <lastmod>2024-05-02T17:23:19+02:00</lastmod>

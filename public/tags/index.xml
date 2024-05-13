@@ -6,13 +6,62 @@
     <description>Recent content in Tags on Moji-Moji - Failing journey of an aspiring pentester</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2024 17:23:19 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 13 May 2024 20:36:31 +0200</lastBuildDate>
     <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bus</title>
+      <link>https://example.org/tags/bus/</link>
+      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
+      <guid>https://example.org/tags/bus/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hybrid</title>
+      <link>https://example.org/tags/hybrid/</link>
+      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
+      <guid>https://example.org/tags/hybrid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mesh</title>
+      <link>https://example.org/tags/mesh/</link>
+      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
+      <guid>https://example.org/tags/mesh/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Network</title>
       <link>https://example.org/tags/network/</link>
-      <pubDate>Thu, 02 May 2024 17:23:19 +0200</pubDate>
+      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
       <guid>https://example.org/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Point-to-Point</title>
+      <link>https://example.org/tags/point-to-point/</link>
+      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
+      <guid>https://example.org/tags/point-to-point/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ring</title>
+      <link>https://example.org/tags/ring/</link>
+      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
+      <guid>https://example.org/tags/ring/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Star</title>
+      <link>https://example.org/tags/star/</link>
+      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
+      <guid>https://example.org/tags/star/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Topologie</title>
+      <link>https://example.org/tags/topologie/</link>
+      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
+      <guid>https://example.org/tags/topologie/</guid>
       <description></description>
     </item>
     <item>
