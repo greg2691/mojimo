@@ -1,33 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Moji-Moji - Failing journey of an aspiring pentester</title>
+    <title>Moji-Moji - Failing journey of an aspiring pentester</title>
     <link>https://example.org/</link>
-    <description>Recent content in Home on Moji-Moji - Failing journey of an aspiring pentester</description>
+    <description>Recent content on Moji-Moji - Failing journey of an aspiring pentester</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 May 2024 20:36:31 +0200</lastBuildDate>
     <atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Topologie Di Rete</title>
-      <link>https://example.org/posts/topologie-di-rete/</link>
-      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
-      <guid>https://example.org/posts/topologie-di-rete/</guid>
-      <description>Identifica o determina tutte le componentistiche che rendono queste connessioni possibili, così come i metodi di accesso ai mezzi di trasmissione.&#xA;Con topologia ci riferisce alla disposizione tipica e alla connessione fisica o logica dei dispositivi in una rete.&#xA;La connessione fisica riguarda esattamente i materiali fisici, come le componenti utilizzate per le connessioni. Parliamo quindi di cavi, router, swtiches, bridges, hub ecc. ecc. Anche la posizione dei nodi riguarda la connessione fisica.</description>
-    </item>
-    <item>
-      <title>Tipi di rete</title>
-      <link>https://example.org/posts/tipologie-di-rete/</link>
-      <pubDate>Thu, 02 May 2024 17:23:19 +0200</pubDate>
-      <guid>https://example.org/posts/tipologie-di-rete/</guid>
-      <description>Ciao bro!! Per complicarci ulteriormente l&amp;rsquo;esistenza queste reti possono essere coinfigurate in vari modi. Per questo motivo abbiamo diverse topologie e diversi tipi di rete.&#xA;Fra i tipi di rete ci sono due, diciamo così, macro categorie:&#xA;Terminologie comuni Terminologie di riferimento Fra le terminologie comuni abbiamo: La WAN: Wide Area Network, conosciuta come &amp;ldquo;L&amp;rsquo;INTERNET&amp;rdquo;. Non è nient&amp;rsquo;altro che un insieme di reti LAN collegate fra loro. Spesso possiamo vedere delle grandi aziende avere un sistema di Intranet, che sarebbe un &amp;ldquo;INTERNET&amp;rdquo; interno accessibile solo dai computer e dalla rete aziendali.</description>
-    </item>
-    <item>
-      <title>Introduzione Alle Reti</title>
-      <link>https://example.org/posts/introduzione-alle-reti/</link>
-      <pubDate>Wed, 01 May 2024 21:23:19 +0200</pubDate>
-      <guid>https://example.org/posts/introduzione-alle-reti/</guid>
-      <description>Oh bro!! La rete è un sistema (semplice?) reso dannatamente complesso che consente a due dispositivi di comunicare fra loro. Questo è semplice, un computer comunica con un altro computer (in questo caso chiamato server) attraverso una rete. In realtà quel computer potrebbe essere addirittura attaccato con un cavo all&amp;rsquo;altro computer (il server) e comunicare in questo modo MA! C&amp;rsquo;è un enorme ma ed è qui che subentra il concetto di rete bello complesso che &amp;ldquo;conosciamo&amp;rdquo;&amp;hellip;</description>
-    </item>
   </channel>
 </rss>

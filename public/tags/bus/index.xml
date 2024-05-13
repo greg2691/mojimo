@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bus on Moji-Moji - Failing journey of an aspiring pentester</title>
-    <link>https://example.org/tags/bus/</link>
+    <link>http://localhost:1313/tags/bus/</link>
     <description>Recent content in Bus on Moji-Moji - Failing journey of an aspiring pentester</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 13 May 2024 20:36:31 +0200</lastBuildDate>
-    <atom:link href="https://example.org/tags/bus/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/bus/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Topologie Di Rete</title>
-      <link>https://example.org/posts/topologie-di-rete/</link>
+      <link>http://localhost:1313/posts/topologie-di-rete/</link>
       <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
-      <guid>https://example.org/posts/topologie-di-rete/</guid>
+      <guid>http://localhost:1313/posts/topologie-di-rete/</guid>
       <description>Identifica o determina tutte le componentistiche che rendono queste connessioni possibili, così come i metodi di accesso ai mezzi di trasmissione.&#xA;Con topologia ci riferisce alla disposizione tipica e alla connessione fisica o logica dei dispositivi in una rete.&#xA;La connessione fisica riguarda esattamente i materiali fisici, come le componenti utilizzate per le connessioni. Parliamo quindi di cavi, router, swtiches, bridges, hub ecc. ecc. Anche la posizione dei nodi riguarda la connessione fisica.</description>
     </item>
   </channel>
