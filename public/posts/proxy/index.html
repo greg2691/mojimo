@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top"  data-theme="dark" lang="en-us" dir="ltr">
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proxy | Moji-Moji - Failing journey of an aspiring pentester</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma.min.css">
+<link rel="stylesheet" href="/main.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+	<nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+		<img src=/pic/moji-logo-2.png>
+    </a>
+
+    <a role="button" id="nav-toggle" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+    
+      <a class="navbar-item" href="/">
+        
+		Home
+      </a>
+	
+      <a class="navbar-item" href="/posts/">
+        
+		Tutti i post
+      </a>
+	
+      <a class="navbar-item" href="/categories/network/">
+        
+		Network
+      </a>
+	
+      <a class="navbar-item" href="">
+        
+		Linux
+      </a>
+	
+      <a class="navbar-item" href="">
+        
+		Windows
+      </a>
+	
+    </div>
+
+    <div class="navbar-end">
+    	<div class="navbar-item">
+    		<div class="buttons">
+			<a class="button is-success" href="https://referral.hackthebox.com/mz8ndln">
+				<strong>Hack The Box</strong>		
+			</a>
+		</div>
+	</div>
+     </div>
+
+  </div>
+</nav>
+
+  </header>
+  <section class="section">
+    <div class="container">
+
+
+  <h1 class="title">Proxy</h1>
+
+  
+  
+  <em><b>Published: </b><time datetime="2024-05-15T15:36:11&#43;02:00">May 15, 2024</time> / 
+    <b>Categories:</b>
+        <a href="/categories/network/">Network</a>
+</em> 
+  <br><br>
+  
+
+
+	<div class="content">
+	
+	<p>Proxy</p>
+<p>Il proxy è essenzialmente un mediatore nella connessione, si siede li nel mezzo fra noi e la nostra destinazione MA in quanto mediatore deve essere in grado di poter ispezionare il contenuto del traffico, altrimenti staremmo parlando di un gateway.</p>
+<h2 id="esistono-principalmente-tre-tipologie-di-proxy">Esistono principalmente tre tipologie di proxy:</h2>
+<p><strong>1. Dedicated Proxy / Forward Proxy:</strong>
+filtra le richieste in uscita. Questo  è quanto. Non è vero&hellip; diciamo che il Forward (o dedicated) Proxy è un filtro fra noi e la meta che vogliamo raggiungere. Facciamo un esempio: come sempre siamo in una grande azienda e ci sono dei computer sensibili magari utilizzati con molta probabilità da dei completi imbecilli. Questi computer quindi non possono connettersi direttamente ad internet, devono usare delle protezioni :wink: , questa protezione è il Forward Proxy, la nostra connessione sarà quindi filtrata dal Proxy. È particolarmente utile nel non prendere malware&hellip; Solamente io qui vedo delle analogie potentissime con il preservativo? :joy: Tornando a noi, generalmente un malware potrebbe bypassare il filtro web senza troppi problemi ma potrebbe difficilmente bypassare un proxy in quanto ne dovrebbe essere a conoscenza, per così dire dovrebbe essere &ldquo;proxy aware&rdquo; o utilizzare una C2 non tradizionale (sarebbe un modo per i malware di ricevere compiti o task). In questo caso possiamo fare due differenze:</p>
+<ol>
+<li>Firefox: se l&rsquo;azienda utilizza solamente il proxy di Firefox le probabilità di beccarsi un malware proxy-aware sono veramente basse, in quanto firefox utilizza librerie libcurls ed è configurabile a prescindere dal sistema operativo su cui risiede. Detto in altre parole il suo codice è configurabile e indipendente dal sistema operativo.</li>
+<li>Altri browser: diverso nel caso in cui si usano browser come Chrome, Edger, Internet Explorer (chi lo usa ancora &lsquo;sto qua?). Questi browser rispondono esclusivamente al proxy di sistema e nel caso in cui il malware utilizza WinSock (API di windows native) le probabilità che sia proxy aware sono molto alte senza utilizzare codice aggiuntivo come C2.</li>
+</ol>
+<p>Come abbiamo avuto modo quindi di vedere, nel primo caso il malware dovrebbe essere in grado di ricevere le informazioni di Firefox, cosa che un malware non è quasi mai in grado di fare.</p>
+<p>Ci sarebbe un modo per i malware di aggirare questo ed è con l&rsquo;utilizzo dei DNS come meccanismo di C2, ma se l&rsquo;organizzazione monitora i DNS questo tipo di traffico è facilmente identificabile.</p>
+<p><strong>2. Reverse Proxy:</strong>
+indovinate? Esatto!! Filtra le richieste in entrata. Principalmente ascolta il traffico in entratata e lo devia ad una rete vicina. Questo è importante: ascolta le richieste su un particolare indirizzo e le veicola ad una rete vicina. Quanti ipotetici scenari siete riusciti ad immaginare?</p>
+<p>Conoscete CloudFare? CloudFare ha delle ottime reti che possono restitere ad attacchi DDoS importanti, grazie all&rsquo;utilizzo di CloudFare ad esempio possiamo controllare la quantità e il tipo di traffico indirizzati al nostro server web. Come possiamo dedurre questo è utile, ma supponiamo questo scenario: in qualità di pentster configuriamo dei rever proxy su un endpoint infetto (un endpoint è un dispositivo come un computer o uno smartphone che comunica con un server), questo endpoint viene impostato in ascolto su una determinata porta e tutte le richieste che arrivano dai client su quella determinata porta vengono veicolati alla nostra porta. In questo caso utilizziamo l&rsquo;endpoint come &ldquo;veicolatore&rdquo; di richieste. Questo ci consente di aggirare ad esempio i firewall o eludere i sistemi di registrazione. È possibile difenderci da questo tipo di attacco con l&rsquo;utilizzo di un IDS (Intrusion Detection System) il quale controlla le richieste web esterne ma nel caso in cui otteniamo l&rsquo;accesso tramite tunnel SSH possiamo veicolare le richieste li ed eludere così l&rsquo;IDS.</p>
+<p>Esiste in fine un altro comune Rever Proxy chiamato ModSecurity, che sarebbe in pratica un WAF (Web Application Firewall). Un WAF ispezione le richieste web in ricerca di contenuti dannosi e blocca la richieste se dannose. Anche CloudFare può comportarsi come un WAF ma bisognerebbe impostarlo affinché decripti il traffico HTTSP cosa che non molte organizzazioni vogliono per loro stesse.</p>
+<p><strong>3. Transparent Proxy:</strong>
+Tutte queste tipologie di proxy possono essere eseguite (o &ldquo;comportarsi&rdquo;) in modo trasparente o in modo non trasparente.</p>
+<ol>
+<li>
+<p>Transparent proxy: in questo caso il cliente non è conoscenza dell&rsquo;esistenza del proxy e quest&rsquo;ultimo intercetta le richieste di comunicazione del cliente verso internet e si comporta come istanza sostitutiva, cioè si sostituisce al client. Dall&rsquo;esterno sia il proxy trasparente che quello non trasparente si comportano come partner di comunicazione.</p>
+</li>
+<li>
+<p>Non-transparent Proxy: in questo caso siamo a conoscenza del proxy e con quest&rsquo;ultimo andrà utilizzata una configurazione speciale che ci assicura che il traffico verso internet sia indirizzato prima al proxy. Senza questa comunicazione non possiamo comunicare con il proxy ed essendo in questo caso il proxy l&rsquo;unico &ldquo;veicolatore&rdquo; o percorso di comunicazione verso le altre reti non possiamo comunicare efficacemente, questo, in altre parole, significa che non potremmo connetterci alla rete.</p>
+</li>
+</ol>
+<p>Questo è quanto per il momento sui proxy. See you next time bro!!!</p>
+
+	
+		</div>
+	
+
+	
+	<div id="graphcomment"></div>
+<script type="text/javascript">
+
+   
+
+  var __semio__params = {
+    graphcommentId: "Moji-Moji", 
+
+    behaviour: {
+      
+      
+    },
+
+    
+
+  }
+
+   
+
+  function __semio__onload() {
+    __semio__gc_graphlogin(__semio__params)
+  }
+
+
+  (function() {
+    var gc = document.createElement('script'); gc.type = 'text/javascript'; gc.async = true;
+    gc.onload = __semio__onload; gc.defer = true; gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+  })();
+  
+
+</script>
+	
+
+
+  				
+    </div>
+  </section>
+  <div class="section">
+<footer>
+  <footer class="footer">
+  <div class="content has-text-centered">
+      
+
+	<script src="/bulma.js"></script> 
+	<p>Don't think a Copyright is necessary here. Just give credits where the credits due, bro!!</p>
+  
+	<img src="https://www.vim.org/images/vim_powered_greenblack.gif">
+
+  </div>
+</footer>
+
+</footer>
+</div>
+  </body>
+</html>
+
+

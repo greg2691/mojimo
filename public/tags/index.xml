@@ -6,8 +6,43 @@
     <description>Recent content in Tags on Moji-Moji - Failing journey of an aspiring pentester</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 May 2024 20:36:31 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 15 May 2024 15:36:11 +0200</lastBuildDate>
     <atom:link href="https://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Forward Proxy</title>
+      <link>https://example.org/tags/forward-proxy/</link>
+      <pubDate>Wed, 15 May 2024 15:36:11 +0200</pubDate>
+      <guid>https://example.org/tags/forward-proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Network</title>
+      <link>https://example.org/tags/network/</link>
+      <pubDate>Wed, 15 May 2024 15:36:11 +0200</pubDate>
+      <guid>https://example.org/tags/network/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxy</title>
+      <link>https://example.org/tags/proxy/</link>
+      <pubDate>Wed, 15 May 2024 15:36:11 +0200</pubDate>
+      <guid>https://example.org/tags/proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Reverse Proxy</title>
+      <link>https://example.org/tags/reverse-proxy/</link>
+      <pubDate>Wed, 15 May 2024 15:36:11 +0200</pubDate>
+      <guid>https://example.org/tags/reverse-proxy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Transparent Proxy</title>
+      <link>https://example.org/tags/transparent-proxy/</link>
+      <pubDate>Wed, 15 May 2024 15:36:11 +0200</pubDate>
+      <guid>https://example.org/tags/transparent-proxy/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Bus</title>
       <link>https://example.org/tags/bus/</link>
@@ -27,13 +62,6 @@
       <link>https://example.org/tags/mesh/</link>
       <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
       <guid>https://example.org/tags/mesh/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Network</title>
-      <link>https://example.org/tags/network/</link>
-      <pubDate>Mon, 13 May 2024 20:36:31 +0200</pubDate>
-      <guid>https://example.org/tags/network/</guid>
       <description></description>
     </item>
     <item>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Forward Proxy on Moji-Moji - Failing journey of an aspiring pentester</title>
+    <link>https://example.org/tags/forward-proxy/</link>
+    <description>Recent content in Forward Proxy on Moji-Moji - Failing journey of an aspiring pentester</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 May 2024 15:36:11 +0200</lastBuildDate>
+    <atom:link href="https://example.org/tags/forward-proxy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Proxy</title>
+      <link>https://example.org/posts/proxy/</link>
+      <pubDate>Wed, 15 May 2024 15:36:11 +0200</pubDate>
+      <guid>https://example.org/posts/proxy/</guid>
+      <description>Proxy&#xA;Il proxy è essenzialmente un mediatore nella connessione, si siede li nel mezzo fra noi e la nostra destinazione MA in quanto mediatore deve essere in grado di poter ispezionare il contenuto del traffico, altrimenti staremmo parlando di un gateway.&#xA;Esistono principalmente tre tipologie di proxy: 1. Dedicated Proxy / Forward Proxy: filtra le richieste in uscita. Questo è quanto. Non è vero&amp;hellip; diciamo che il Forward (o dedicated) Proxy è un filtro fra noi e la meta che vogliamo raggiungere.</description>
+    </item>
+  </channel>
+</rss>
